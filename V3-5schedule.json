@@ -1,0 +1,46 @@
+{
+  "workout_schedule": [
+    {
+      "name": "Monday",
+      "rest": true,
+      "workout_purpose": [],
+      "exercises": []
+    },
+    {
+      "name": "Tuesday",
+      "rest": true,
+      "workout_purpose": [],
+      "exercises": []
+    },
+    {
+      "name": "Wednesday",
+      "rest": true,
+      "workout_purpose": [],
+      "exercises": []
+    },
+    {
+      "name": "Thursday",
+      "rest": true,
+      "workout_purpose": [],
+      "exercises": []
+    },
+    {
+      "name": "Friday",
+      "rest": true,
+      "workout_purpose": [],
+      "exercises": []
+    },
+    {
+      "name": "Saturday",
+      "rest": true,
+      "workout_purpose": [],
+      "exercises": []
+    },
+    {
+      "name": "Sunday",
+      "rest": true,
+      "workout_purpose": [],
+      "exercises": []
+    }
+  ]
+}
