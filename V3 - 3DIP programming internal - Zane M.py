@@ -1,9 +1,9 @@
 import json
 
-with open('BothEandM.json', 'r') as file:
+with open('V3-5BothEandM.json', 'r') as file:
     data = json.load(file) 
 
-with open("schedule.json", "r") as f:
+with open("V3-5schedule.json", "r") as f:
     data_schedule = json.load(f)
 
 exercises = data["exercises"]
@@ -74,7 +74,7 @@ def view_week():
             if muscles:
                 print(f"{weekday_name.title()}: Workout Day → {', '.join(muscles[0])}")
     
-def save_schedule_to_json(filename="schedule.json"):
+def save_schedule_to_json(filename="V3-5schedule.json"):
     data_schedule = {"workout_schedule": []}
     for day in day_list:
         day_name = day[0]
@@ -91,7 +91,7 @@ def save_schedule_to_json(filename="schedule.json"):
         json.dump(data_schedule, f, indent=2)
     print("✅ Schedule saved in JSON!")
 
-def view_full_schedule(filename="schedule.json"):
+def view_full_schedule(filename="V3-5schedule.json"):
     
     try:
         with open(filename, "r") as f:
