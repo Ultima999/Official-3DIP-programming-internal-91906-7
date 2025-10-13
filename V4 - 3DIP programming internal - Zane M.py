@@ -2,11 +2,11 @@ import json
 import tkinter as tk
 from tkinter import messagebox, scrolledtext
 
-with open('BothEandM.json', 'r') as file:
+with open('V3-5BothEandM.json', 'r') as file:
     data = json.load(file)
 
 try:
-    with open("schedule.json", "r") as schedule_file:
+    with open("V3-5schedule.json", "r") as schedule_file:
         json_schedule_data = json.load(schedule_file)
 except FileNotFoundError:
     json_schedule_data = {"workout_schedule": []}
@@ -124,7 +124,7 @@ def create_schedule():
     tk.Button(schedule_window, text="Next", command=confirm_selected_days).pack(pady=5)
     tk.Button(schedule_window, text="Confirm All", command=confirm_all_muscles).pack(pady=5)
 
-def save_schedule_to_json(filename="schedule.json"):
+def save_schedule_to_json(filename="V3-5schedule.json"):
     json_schedule_data = {"workout_schedule": []}
     for day_entry in day_list:
         day_name = day_entry[0]
@@ -140,7 +140,7 @@ def save_schedule_to_json(filename="schedule.json"):
         json.dump(json_schedule_data, json_file, indent=2)
 
 
-def view_full_schedule(filename="schedule.json"):
+def view_full_schedule(filename="V3-5schedule.json"):
     try:
         with open(filename, "r") as json_file:
             json_schedule_data = json.load(json_file)
