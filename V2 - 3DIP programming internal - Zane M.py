@@ -1,11 +1,11 @@
 import json
 
-with open('muscle_groups.json', 'r') as fileM:
+with open('V2muscle_groups.json', 'r') as fileM:
     dataM = json.load(fileM)
 
 muscle_groups = dataM["muscle_groups"]
 
-with open('exercises.json', 'r') as fileE:
+with open('V2exercises.json', 'r') as fileE:
     dataE = json.load(fileE)
 
 exercises = dataE["exercises"]
@@ -82,4 +82,5 @@ while True:
         print(describe_muscle_hit(muscle_name))
     elif option == 9:
         print("Thank you for using this program! Have a great day :D")
+
         break
