@@ -1,0 +1,15 @@
+{
+   "muscle_groups": {
+            "Chest": ["upper chest", "mid chest", "lower chest"],
+            "Shoulders": ["front delts", "side delts", "rear delts"],
+            "Back": ["upper traps", "middle traps", "lower traps", "lats", "rhomboid", "teres major/minor"],
+            "Biceps": ["short head", "long head"],
+            "Triceps": ["long head", "lateral head", "medial head"],
+            "Abs": ["upper abs", "lower abs", "obliques", "deep core"],
+            "Glutes": ["glute max", "glute med", "glute min"],
+            "Quads": ["outer quad", "inner quad", "mid quad", "quad tendon"],
+            "Hamstrings": ["outer ham", "inner ham"],
+            "Calves": ["upper calf (gastrocnemius)", "lower calf (soleus)"],
+            "Forearms": ["top forearm", "bottom forearm"]
+        }
+}

@@ -1,0 +1,73 @@
+{
+  "exercises": {
+    "Chest": [
+      "Barbell Bench Press",
+      "Incline Dumbbell Press",
+      "Chest Dips",
+      "Dumbbell Flyes",
+      "Machine Chest Press"
+    ],
+    "Shoulders": [
+      "Overhead Barbell Press",
+      "Dumbbell Lateral Raises",
+      "Rear Delt Fly",
+      "Arnold Press",
+      "Face Pulls"
+    ],
+    "Back": [
+      "Pull Ups / Chin Ups",
+      "Barbell Rows",
+      "Deadlifts",
+      "Lat Pulldowns",
+      "Seated Cable Rows"
+    ],
+    "Biceps": [
+      "Barbell Curls",
+      "Dumbbell Incline Curls",
+      "Preacher Curls",
+      "Hammer Curls"
+    ],
+    "Triceps": [
+      "Close Grip Bench Press",
+      "Overhead Dumbbell Extension",
+      "Tricep Pushdowns",
+      "Skull Crushers"
+    ],
+    "Abs": [
+      "Hanging Leg Raises",
+      "Weighted Cable Crunch",
+      "Russian Twists",
+      "Plank Variations"
+    ],
+    "Glutes": [
+      "Hip Thrusts",
+      "Bulgarian Split Squats",
+      "Barbell Glute Bridges",
+      "Step-Ups"
+    ],
+    "Quads": [
+      "Back Squats",
+      "Hack Squats",
+      "Leg Press",
+      "Walking Lunges",
+      "Bulgarian Split Squats"
+    ],
+    "Hamstrings": [
+      "Romanian Deadlifts",
+      "Lying Leg Curls",
+      "Good Mornings",
+      "Nordic Hamstring Curls"
+    ],
+    "Calves": [
+      "Standing Calf Raises (Outward Foot Position)",
+      "Seated Calf Raises (Inward Foot Position)",
+      "DumbbelllTip Toe Walks"
+    ],
+    "Forearms": [
+      "Barbell Wrist Curls",
+      "Reverse Curls",
+      "Farmer’s Carries",
+      "Wrist Roller"
+    ]
+  }
+}
