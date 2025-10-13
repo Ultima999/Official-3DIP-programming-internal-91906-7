@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import messagebox, scrolledtext, ttk
 
 # --- Load Data ---
-with open('BothEandM.json', 'r') as file:
+with open('V3-5BothEandM.json', 'r') as file:
     file_data = json.load(file)
 
 exercise_data = file_data["exercises"]
@@ -16,7 +16,7 @@ week_day_list = [
 days_of_week = [day_entry[0] for day_entry in week_day_list]
 
 try:
-    with open("schedule.json", "r") as schedule_file:
+    with open("V3-5schedule.json", "r") as schedule_file:
         schedule_json_data = json.load(schedule_file)
 except FileNotFoundError:
     schedule_json_data = {
@@ -55,7 +55,7 @@ def map_existing_exercises_by_day(existing_schedule_data):
     return {day_entry["name"]: list(day_entry.get("exercises", []))
             for day_entry in existing_schedule_data.get("workout_schedule", [])}
 
-def save_schedule_to_json(filename="schedule.json"):
+def save_schedule_to_json(filename="V3-5schedule.json"):
     existing_exercise_map = map_existing_exercises_by_day(schedule_json_data)
     updated_schedule = {"workout_schedule": []}
     for day_entry in week_day_list:
@@ -299,14 +299,14 @@ def reset_all_data():
             for day_name in days_of_week
         ]
     }
-    with open("schedule.json", "w") as schedule_file:
+    with open("V3-5schedule.json", "w") as schedule_file:
         json.dump(empty_schedule, schedule_file, indent=2)
     schedule_json_data.clear()
     schedule_json_data.update(empty_schedule)
     update_output_box()
     messagebox.showinfo("Reset", "✅ All data has been reset.")
 
-def view_full_schedule(filename="schedule.json"):
+def view_full_schedule(filename="V3-5schedule.json"):
     try:
         with open(filename, "r") as schedule_file:
             json_data = json.load(schedule_file)
