@@ -9,7 +9,7 @@ with open('V3-5BothEandM.json', 'r') as file:
 exercise_data = file_data["exercises"]        # Dictionary of main muscles containing the necessary values of exercises. 
 muscle_group_data = file_data["muscle_groups"]  # Dictionary of main muscles with values as sub-muscles
 
-# variable
+# Assigning each day of the week a value depending on if it is rest/workout, to be changed by users input. initially rest.
 week_day_list = [
     ['Monday', True], ['Tuesday', True], ['Wednesday', True],
     ['Thursday', True], ['Friday', True], ['Saturday', True], ['Sunday', True]
@@ -105,7 +105,10 @@ def create_schedule():
              text="NOTE: You require between 2 - 5 Workout days weekly for optimal growth.\n"
                   "You also cannot hit the same muscle two days in a row,\n"
                   "as individual muscles need good rest between each workout.",
-             font=("Arial", 10)).pack(pady=9)
+             font=("Arial", 10)).pack(pady=5)
+    tk.Label(day_selection_window,
+             text="Try to hit each muscle you desire at least twice a week.",
+             font=("Arial", 10)).pack(pady=5)
 
     # Multiple selection listbox for days
     day_listbox = tk.Listbox(day_selection_window, selectmode="multiple", height=7, exportselection=False)
